@@ -1,0 +1,10 @@
+SERVER=206.189.236.52	# do-linux1 25G disk / NYC1 - Ubuntu 16.04.4 x64 - used for github editing work
+USER=root
+USER=walter
+
+# ping ${SERVER}
+# cat ~/.ssh/id_rsa.pub | ssh ${USER}@${SERVER} "cat >> ~/.ssh/authorized_keys"
+
+ping -c 1 ${SERVER}
+echo "Connecting ${USER}@${SERVER}"
+ssh ${USER}@${SERVER}
